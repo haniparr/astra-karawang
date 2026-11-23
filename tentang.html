@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami | Dealer Astra Isuzu Karawang</title>
+  <meta name="description" content="Dealer Resmi Astra Isuzu Karawang — Dealer Isuzu Terbesar se-Jabodetabek. Kenali profil, keunggulan, dan tim sales consultant kami." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            isuzu: { red: '#E01E2B', dark: '#0F1115', blue: '#004B93', soft: '#F8F9FA' }
+          },
+          fontFamily: {
+            display: ['"Archivo Black"', 'Inter', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, ::before, ::after { box-sizing: border-box; }
+    html, body { overflow-x: hidden; max-width: 100vw; width: 100%; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, p { overflow-wrap: break-word; word-break: break-word; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased selection:bg-isuzu-red selection:text-white">
+
+  <!-- ── Top bar ── -->
+  <div class="bg-isuzu-dark text-white text-xs border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-3 text-center sm:text-left">
+      <div class="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+        <span class="bg-isuzu-blue text-[10px] font-bold px-2 py-0.5 rounded text-white tracking-wider">ASTRA</span>
+        <span class="font-semibold text-neutral-200 text-[11px] sm:text-xs">DEALER ISUZU TERBESAR SE-JABODETABEK</span>
+      </div>
+      <div class="flex items-center gap-3 text-neutral-300 text-[11px] sm:text-xs">
+        <span class="hidden sm:inline">PIC: <strong class="text-white">Gelar Dwi Pramudita</strong></span>
+        <a href="https://wa.me/6285711593336" target="_blank" rel="noopener" class="text-neutral-200 hover:text-white flex items-center gap-1 font-semibold">
+          <span>WhatsApp:</span> <span class="text-white">0857-1159-3336</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Navbar ── -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral-200 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 h-16 sm:h-20 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="flex flex-col">
+          <span class="font-display text-2xl text-isuzu-red tracking-tight leading-none">ISUZU</span>
+          <span class="text-[10px] font-bold text-isuzu-blue tracking-widest mt-0.5">ASTRA ISUZU</span>
+        </div>
+        <div class="h-6 w-px bg-neutral-300 hidden sm:block"></div>
+        <span class="text-xs text-neutral-500 font-medium hidden sm:inline">Karawang</span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-7 text-sm font-semibold text-neutral-700">
+        <li><a href="pricelist.html" class="hover:text-isuzu-red transition-colors">Pricelist</a></li>
+        <li><a href="index.html#membership" class="hover:text-isuzu-red transition-colors">Promo &amp; Membership</a></li>
+        <li><a href="tentang.html" class="text-isuzu-red border-b-2 border-isuzu-red pb-0.5">Tentang Kami</a></li>
+        <li><a href="testimonial.html" class="hover:text-isuzu-red transition-colors">Testimonial</a></li>
+        <li><a href="index.html#kontak" class="hover:text-isuzu-red transition-colors">Kontak</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://wa.me/6285711593336?text=Halo+Mas+Gelar,+saya+ingin+konsultasi+pembelian+unit+Isuzu."
+           target="_blank" rel="noopener"
+           class="hidden sm:inline-flex items-center gap-2 bg-isuzu-red text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition-colors shadow-sm">
+          Chat WhatsApp <span>↗</span>
+        </a>
+        <button id="menuBtn" class="lg:hidden p-2 border border-neutral-200 rounded-lg text-lg leading-none" aria-label="Buka Menu">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-neutral-100 bg-white">
+      <div class="px-4 py-4 space-y-1 text-sm font-medium">
+        <a href="pricelist.html" class="block py-2.5 border-b border-neutral-100">Pricelist</a>
+        <a href="index.html#membership" class="block py-2.5 border-b border-neutral-100">Promo &amp; Membership</a>
+        <a href="tentang.html" class="block py-2.5 border-b border-neutral-100 text-isuzu-red font-bold">Tentang Kami</a>
+        <a href="testimonial.html" class="block py-2.5 border-b border-neutral-100">Testimonial</a>
+        <a href="index.html#kontak" class="block py-2.5 border-b border-neutral-100">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Page Hero ── -->
+  <section class="bg-isuzu-dark text-white py-12 sm:py-16 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">TENTANG KAMI</p>
+      <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-tight uppercase mt-3">
+        Dealer Isuzu<br><span class="text-isuzu-red">Terbesar se-Jabodetabek</span>
+      </h1>
+      <p class="mt-4 text-neutral-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Pusat penjualan resmi Astra Isuzu Karawang. Mitra transportasi komersial terpercaya untuk logistik, manufaktur, dan agrobisnis di seluruh Jabodetabek dan sekitarnya.
+      </p>
+    </div>
+    <span class="absolute top-4 right-4 font-display text-[80px] sm:text-[120px] text-white/5 leading-none select-none uppercase">ASTRA</span>
+  </section>
+
+  <!-- ── Profil Dealer ── -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">PROFIL DEALER</p>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-tight mt-3 uppercase text-neutral-950">
+          Dealer Astra Isuzu Karawang
+        </h2>
+        <p class="mt-5 text-neutral-600 leading-relaxed text-sm sm:text-base">
+          <strong>Dealer Astra Isuzu Karawang</strong> berdedikasi menjadi mitra transportasi terdepan bagi seluruh pelaku bisnis. Dengan fasilitas bengkel lengkap, ketersediaan unit cepat, dan dukungan armada servis keliling (BIB), kami dipercaya oleh berbagai perusahaan logistik, industri manufaktur kawasan industri Karawang &amp; Cikarang, penyedia travel karyawan, hingga sektor agrobisnis.
+        </p>
+        <p class="mt-4 text-neutral-600 leading-relaxed text-sm sm:text-base">
+          Sebagai dealer resmi <strong>member of ASTRA</strong>, setiap transaksi dilakukan dengan transparansi penuh — mulai dari harga, proses pengadaan unit, hingga jaminan purna jual resmi Astra yang menjangkau seluruh Indonesia.
+        </p>
+
+        <!-- Profile PIC -->
+        <div class="mt-8 p-4 sm:p-5 bg-isuzu-soft rounded-2xl border border-neutral-200 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-isuzu-red text-white flex items-center justify-center font-display text-lg sm:text-xl shrink-0">
+            GD
+          </div>
+          <div class="min-w-0 flex-1">
+            <p class="text-xs text-neutral-500 font-semibold uppercase tracking-wider">PIC &amp; SALES CONSULTANT</p>
+            <h3 class="font-bold text-base sm:text-lg text-neutral-900">Gelar Dwi Pramudita</h3>
+            <p class="text-xs text-neutral-600 mt-0.5">Dealer Astra Isuzu Karawang</p>
+            <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs">
+              <a href="https://wa.me/6285711593336" target="_blank" rel="noopener" class="text-isuzu-red font-semibold hover:underline">
+                WA: 0857-1159-3336
+              </a>
+              <span class="text-neutral-400 hidden sm:inline">•</span>
+              <a href="mailto:Gelar.dwipramudita@iso.astra.co.id" class="text-isuzu-blue font-semibold hover:underline break-all">
+                Gelar.dwipramudita@iso.astra.co.id
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key facts -->
+      <div class="grid grid-cols-2 gap-3 sm:gap-4">
+        <div class="bg-isuzu-soft p-4 sm:p-6 rounded-2xl border border-neutral-200">
+          <p class="font-display text-2xl sm:text-3xl text-isuzu-blue">#1</p>
+          <p class="font-bold text-sm sm:text-base mt-1 sm:mt-2 text-neutral-900 leading-tight">Terbesar se-Jabodetabek</p>
+          <p class="text-[11px] sm:text-xs text-neutral-600 mt-1 leading-relaxed">Stok unit lengkap dan jaringan bengkel terlengkap di kawasan industri.</p>
+        </div>
+        <div class="bg-isuzu-soft p-4 sm:p-6 rounded-2xl border border-neutral-200">
+          <p class="font-display text-2xl sm:text-3xl text-isuzu-red">24/7</p>
+          <p class="font-bold text-sm sm:text-base mt-1 sm:mt-2 text-neutral-900 leading-tight">Konsultasi Ramah</p>
+          <p class="text-[11px] sm:text-xs text-neutral-600 mt-1 leading-relaxed">Siap berkunjung ke kantor atau pool armada Anda untuk presentasi unit.</p>
+        </div>
+        <div class="bg-isuzu-soft p-4 sm:p-6 rounded-2xl border border-neutral-200">
+          <p class="font-display text-2xl sm:text-3xl text-isuzu-blue">100%</p>
+          <p class="font-bold text-sm sm:text-base mt-1 sm:mt-2 text-neutral-900 leading-tight">Standar Resmi Astra</p>
+          <p class="text-[11px] sm:text-xs text-neutral-600 mt-1 leading-relaxed">Transparansi harga, surat jalan resmi, dan jaminan purna jual terpercaya.</p>
+        </div>
+        <div class="bg-isuzu-soft p-4 sm:p-6 rounded-2xl border border-neutral-200">
+          <p class="font-display text-2xl sm:text-3xl text-isuzu-red">BIB</p>
+          <p class="font-bold text-sm sm:text-base mt-1 sm:mt-2 text-neutral-900 leading-tight">Bengkel Berjalan</p>
+          <p class="text-[11px] sm:text-xs text-neutral-600 mt-1 leading-relaxed">Armada servis yang siap datang langsung ke tempat usaha Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Sektor Industri ── -->
+  <section class="bg-neutral-100 border-y border-neutral-200 py-10 sm:py-14">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <p class="text-[11px] font-bold tracking-widest text-neutral-500 uppercase">SOLUSI ANDALAN UNTUK SEMUA SEKTOR USAHA</p>
+        <h2 class="font-display text-2xl sm:text-3xl uppercase mt-2 text-neutral-900">Customer Kami Meliputi</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-3 text-sm font-semibold">
+        <span class="inline-flex items-center gap-2 bg-white border border-neutral-300 px-4 py-2 rounded-xl text-neutral-800 shadow-sm">
+          <svg class="w-4 h-4 text-neutral-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8h4l3 3v5a1 1 0 01-1 1h-1"/></svg>
+          Logistik &amp; Ekspedisi
+        </span>
+        <span class="inline-flex items-center gap-2 bg-white border border-neutral-300 px-4 py-2 rounded-xl text-neutral-800 shadow-sm">
+          <svg class="w-4 h-4 text-neutral-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          Pabrik &amp; Manufaktur
+        </span>
+        <span class="inline-flex items-center gap-2 bg-white border border-neutral-300 px-4 py-2 rounded-xl text-neutral-800 shadow-sm">
+          <svg class="w-4 h-4 text-neutral-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7h8m-8 4h8m-8 4h8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2zm1 0v2m12-2v2"/></svg>
+          Antar Jemput Karyawan
+        </span>
+        <span class="inline-flex items-center gap-2 bg-white border border-neutral-300 px-4 py-2 rounded-xl text-neutral-800 shadow-sm">
+          <svg class="w-4 h-4 text-neutral-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V6m0 0l-4 4m4-4l4 4M5 19a7 7 0 0114 0"/></svg>
+          Pertanian &amp; Perkebunan
+        </span>
+        <span class="inline-flex items-center gap-2 bg-white border border-neutral-300 px-4 py-2 rounded-xl text-neutral-800 shadow-sm">
+          <svg class="w-4 h-4 text-neutral-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Peternakan
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 7 Keunggulan ── -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-3xl">
+        <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">HANYA DI ASTRA ISUZU</p>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-tight mt-3 uppercase text-neutral-950">
+          7 Keuntungan Pasti.<br><span class="text-isuzu-blue">Bukan Sekadar Diskon Unit.</span>
+        </h2>
+        <p class="mt-4 text-neutral-600 text-sm sm:text-base leading-relaxed">
+          Setiap pembelian unit Isuzu di Astra Isuzu Karawang otomatis memberikan Anda akses ke 7 proteksi dan fasilitas eksklusif yang tidak didapatkan di tempat lain:
+        </p>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">01</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Anti Karat</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Lapisan proteksi anti karat berkualitas tinggi untuk melindungi bodi dan sasis kendaraan dari korosi, memastikan keawetan unit jangka panjang.</p>
+        </div>
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">02</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Physical Ability</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Ketahanan fisik mesin dan rangka teruji standar global Isuzu. Mampu beroperasi optimal pada muatan berat dan medan operasional ekstrem.</p>
+        </div>
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">03</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Servis Lebih Cepat</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Prioritas jalur antrean dan mekanik tersertifikasi agar armada bisnis Anda segera kembali beroperasi tanpa membuang waktu produktif.</p>
+        </div>
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">04</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Bengkel Isuzu Berjalan</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Layanan armada servis bergerak (BIB) siap datang langsung ke pabrik, pool armada, atau lokasi usaha Anda untuk servis rutin dan darurat.</p>
+        </div>
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">05</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Jaringan Se-Indonesia</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Kemudahan akses servis, suku cadang orisinal, dan garansi resmi Astra yang terintegrasi di seluruh pelosok Indonesia tanpa rasa was-was.</p>
+        </div>
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">06</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Santunan Driver Rp 20 Jt</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Proteksi dan santunan hingga Rp 20.000.000 bagi driver setia yang mengemudikan kendaraan Isuzu Anda sebagai bentuk kepedulian Astra.</p>
+        </div>
+        <div class="bg-isuzu-soft rounded-2xl p-6 border border-neutral-200 hover:border-isuzu-red transition-all">
+          <span class="text-isuzu-red font-display text-2xl">07</span>
+          <h3 class="font-bold text-lg mt-3 text-neutral-900">Training Driver</h3>
+          <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Pelatihan profesional berkendara hemat bahan bakar (Eco Drive) dan keselamatan (Safety Drive) untuk menekan biaya operasional perusahaan.</p>
+        </div>
+        <div class="bg-gradient-to-br from-isuzu-blue to-neutral-900 text-white rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="bg-white/20 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">ASTRA GUARANTEE</span>
+            <h3 class="font-bold text-xl mt-3">Nikmati Semua Keuntungan</h3>
+            <p class="text-xs text-blue-100 mt-2">Dapatkan penawaran resmi langsung dari Dealer Astra Isuzu Karawang.</p>
+          </div>
+          <a href="https://wa.me/6285711593336?text=Halo+Mas+Gelar,+saya+ingin+info+7+Keuntungan+Astra+Isuzu."
+             target="_blank" rel="noopener"
+             class="mt-5 inline-block text-center bg-white text-isuzu-blue font-bold text-xs py-3 rounded-xl hover:bg-neutral-100 transition-colors">
+            Hubungi Sales Consultant ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="bg-isuzu-dark text-white py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-tight uppercase">Siap Berkonsultasi?</h2>
+      <p class="mt-4 text-neutral-300 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
+        Hubungi <strong>Gelar Dwi Pramudita</strong> langsung via WhatsApp atau isi formulir konsultasi kami.
+      </p>
+      <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://wa.me/6285711593336?text=Halo+Mas+Gelar,+saya+ingin+konsultasi+unit+Isuzu."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-2 bg-isuzu-red text-white font-bold px-8 py-3.5 rounded-xl hover:bg-red-700 transition-colors text-sm sm:text-base">
+          Chat WhatsApp ↗
+        </a>
+        <a href="index.html#kontak"
+           class="inline-flex items-center justify-center gap-2 border border-neutral-600 text-white font-semibold px-8 py-3.5 rounded-xl hover:border-neutral-400 transition-colors text-sm sm:text-base">
+          Formulir Konsultasi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="bg-black text-neutral-400 border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+      <div class="flex flex-col items-center sm:items-start gap-1">
+        <span class="font-display text-xl text-isuzu-red tracking-tight">ISUZU</span>
+        <span class="text-[10px] font-bold text-isuzu-blue tracking-widest">ASTRA ISUZU KARAWANG</span>
+      </div>
+      <p class="text-neutral-500">© 2026 Dealer Astra Isuzu Karawang. Member of ASTRA.</p>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-white">Beranda</a>
+        <a href="pricelist.html" class="hover:text-white">Pricelist</a>
+        <a href="index.html#kontak" class="hover:text-white">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

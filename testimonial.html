@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Pelanggan | Dealer Astra Isuzu Karawang</title>
+  <meta name="description" content="Apa kata pelanggan setia Dealer Astra Isuzu Karawang. Testimoni nyata dari perusahaan logistik, manufaktur, dan pelaku bisnis armada." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            isuzu: { red: '#E01E2B', dark: '#0F1115', blue: '#004B93', soft: '#F8F9FA' }
+          },
+          fontFamily: {
+            display: ['"Archivo Black"', 'Inter', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, ::before, ::after { box-sizing: border-box; }
+    html, body { overflow-x: hidden; max-width: 100vw; width: 100%; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, p { overflow-wrap: break-word; word-break: break-word; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased selection:bg-isuzu-red selection:text-white">
+
+  <!-- ── Top bar ── -->
+  <div class="bg-isuzu-dark text-white text-xs border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-3 text-center sm:text-left">
+      <div class="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+        <span class="bg-isuzu-blue text-[10px] font-bold px-2 py-0.5 rounded text-white tracking-wider">ASTRA</span>
+        <span class="font-semibold text-neutral-200 text-[11px] sm:text-xs">DEALER ISUZU TERBESAR SE-JABODETABEK</span>
+      </div>
+      <div class="flex items-center gap-3 text-neutral-300 text-[11px] sm:text-xs">
+        <span class="hidden sm:inline">PIC: <strong class="text-white">Gelar Dwi Pramudita</strong></span>
+        <a href="https://wa.me/6285711593336" target="_blank" rel="noopener" class="text-neutral-200 hover:text-white flex items-center gap-1 font-semibold">
+          <span>WhatsApp:</span> <span class="text-white">0857-1159-3336</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Navbar ── -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral-200 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 h-16 sm:h-20 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="flex flex-col">
+          <span class="font-display text-2xl text-isuzu-red tracking-tight leading-none">ISUZU</span>
+          <span class="text-[10px] font-bold text-isuzu-blue tracking-widest mt-0.5">ASTRA ISUZU</span>
+        </div>
+        <div class="h-6 w-px bg-neutral-300 hidden sm:block"></div>
+        <span class="text-xs text-neutral-500 font-medium hidden sm:inline">Karawang</span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-7 text-sm font-semibold text-neutral-700">
+        <li><a href="pricelist.html" class="hover:text-isuzu-red transition-colors">Pricelist</a></li>
+        <li><a href="index.html#membership" class="hover:text-isuzu-red transition-colors">Promo &amp; Membership</a></li>
+        <li><a href="tentang.html" class="hover:text-isuzu-red transition-colors">Tentang Kami</a></li>
+        <li><a href="testimonial.html" class="text-isuzu-red border-b-2 border-isuzu-red pb-0.5">Testimonial</a></li>
+        <li><a href="index.html#kontak" class="hover:text-isuzu-red transition-colors">Kontak</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://wa.me/6285711593336?text=Halo+Mas+Gelar,+saya+ingin+konsultasi+pembelian+unit+Isuzu."
+           target="_blank" rel="noopener"
+           class="hidden sm:inline-flex items-center gap-2 bg-isuzu-red text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition-colors shadow-sm">
+          Chat WhatsApp <span>↗</span>
+        </a>
+        <button id="menuBtn" class="lg:hidden p-2 border border-neutral-200 rounded-lg text-lg leading-none" aria-label="Buka Menu">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-neutral-100 bg-white">
+      <div class="px-4 py-4 space-y-1 text-sm font-medium">
+        <a href="pricelist.html" class="block py-2.5 border-b border-neutral-100">Pricelist</a>
+        <a href="index.html#membership" class="block py-2.5 border-b border-neutral-100">Promo &amp; Membership</a>
+        <a href="tentang.html" class="block py-2.5 border-b border-neutral-100">Tentang Kami</a>
+        <a href="testimonial.html" class="block py-2.5 border-b border-neutral-100 text-isuzu-red font-bold">Testimonial</a>
+        <a href="index.html#kontak" class="block py-2.5 border-b border-neutral-100">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Page Hero ── -->
+  <section class="bg-isuzu-dark text-white py-12 sm:py-16 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">TESTIMONIAL PELANGGAN</p>
+      <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-tight uppercase mt-3">
+        Apa Kata<br><span class="text-isuzu-red">Pelanggan Kami</span>
+      </h1>
+      <p class="mt-4 text-neutral-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Kepuasan pelanggan adalah bukti nyata. Bergabunglah bersama ratusan perusahaan logistik, manufaktur, dan pelaku bisnis yang telah mempercayakan armadanya kepada Dealer Astra Isuzu Karawang.
+      </p>
+    </div>
+    <span class="absolute top-4 right-4 font-display text-[80px] sm:text-[120px] text-white/5 leading-none select-none uppercase">"</span>
+  </section>
+
+  <!-- ── Main Testimonial ── -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div class="bg-neutral-100 rounded-3xl aspect-[4/3] overflow-hidden border border-neutral-200">
+        <img src="assets/testimoni.jpg" alt="Pelanggan Astra Isuzu Giga"
+             class="w-full h-full object-cover" onerror="this.style.display='none'" />
+      </div>
+      <div>
+        <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">TESTIMONI UTAMA</p>
+        <blockquote class="font-display text-xl sm:text-2xl md:text-3xl leading-snug mt-5 text-neutral-900">
+          "After sales service Astra Isuzu sangat responsif. Ketika ada unit trouble di luar kota, Bengkel Isuzu Berjalan bereaksi cepat sehingga operasional logistik kami tidak terhambat. Puas bermitra dengan Astra."
+        </blockquote>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-isuzu-blue text-white font-bold flex items-center justify-center text-sm shrink-0">
+            LL
+          </div>
+          <div>
+            <p class="font-bold text-neutral-900">LIVI LOGISTICS</p>
+            <p class="text-xs text-neutral-500">Direktur Operasional • Pengguna Armada Isuzu Giga 6×2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Grid Testimonial Tambahan ── -->
+  <section class="bg-neutral-50 py-12 sm:py-16 border-t border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">LEBIH BANYAK CERITA</p>
+        <h2 class="font-display text-2xl sm:text-3xl uppercase mt-2 text-neutral-900">Kepercayaan Pelanggan Kami</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Testimonial Card 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-neutral-700 leading-relaxed italic">
+            "Proses pembelian armada 5 unit Isuzu Elf NMR sangat mudah. Sales consultant Mas Gelar sangat membantu mulai dari simulasi kredit hingga pengiriman unit. Recommended!"
+          </p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-isuzu-red text-white font-bold flex items-center justify-center text-xs shrink-0">PT</div>
+            <div>
+              <p class="font-bold text-sm text-neutral-900">PT Karya Maju Sejahtera</p>
+              <p class="text-[11px] text-neutral-500">Direktur • Fleet Isuzu Elf NMR 5 unit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-neutral-700 leading-relaxed italic">
+            "Sudah 3 tahun pakai Isuzu Traga untuk distribusi sembako. Mesin irit, servis di BIB cepat, dan Mas Gelar selalu responsif setiap ada pertanyaan teknis. Lanjut order unit baru tahun ini!"
+          </p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-isuzu-blue text-white font-bold flex items-center justify-center text-xs shrink-0">BK</div>
+            <div>
+              <p class="font-bold text-sm text-neutral-900">UD Berkah Karawang</p>
+              <p class="text-[11px] text-neutral-500">Owner • Pengguna Isuzu Traga Pick Up</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-neutral-700 leading-relaxed italic">
+            "Pengadaan 10 unit Isuzu Giga untuk armada pengiriman manufaktur kami berjalan lancar. Dukungan fleet dan e-Katalog LKPP mempermudah proses procurement perusahaan."
+          </p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-neutral-800 text-white font-bold flex items-center justify-center text-xs shrink-0">CI</div>
+            <div>
+              <p class="font-bold text-sm text-neutral-900">PT Cikarang Industri</p>
+              <p class="text-[11px] text-neutral-500">Procurement Manager • Fleet Isuzu Giga 10 unit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Berbagi Pengalaman ── -->
+  <section class="bg-isuzu-dark text-white py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-xs font-bold tracking-widest text-isuzu-red uppercase">BERGABUNG BERSAMA KAMI</p>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-tight mt-4 uppercase">
+        Jadilah Bagian dari Kisah Sukses Ini
+      </h2>
+      <p class="mt-4 text-neutral-300 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
+        Konsultasikan kebutuhan armada bisnis Anda bersama <strong>Gelar Dwi Pramudita</strong> dan rasakan sendiri standar pelayanan Astra Isuzu Karawang.
+      </p>
+      <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://wa.me/6285711593336?text=Halo+Mas+Gelar,+saya+ingin+konsultasi+unit+Isuzu."
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-2 bg-isuzu-red text-white font-bold px-8 py-3.5 rounded-xl hover:bg-red-700 transition-colors text-sm sm:text-base shadow-lg shadow-red-900/30">
+          Chat WhatsApp Sekarang ↗
+        </a>
+        <a href="pricelist.html"
+           class="inline-flex items-center justify-center gap-2 border border-neutral-600 text-white font-semibold px-8 py-3.5 rounded-xl hover:border-neutral-400 transition-colors text-sm sm:text-base">
+          Lihat Pricelist Unit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="bg-black text-neutral-400 border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+      <div class="flex flex-col items-center sm:items-start gap-1">
+        <span class="font-display text-xl text-isuzu-red tracking-tight">ISUZU</span>
+        <span class="text-[10px] font-bold text-isuzu-blue tracking-widest">ASTRA ISUZU KARAWANG</span>
+      </div>
+      <p class="text-neutral-500">© 2026 Dealer Astra Isuzu Karawang. Member of ASTRA.</p>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-white">Beranda</a>
+        <a href="pricelist.html" class="hover:text-white">Pricelist</a>
+        <a href="index.html#kontak" class="hover:text-white">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
