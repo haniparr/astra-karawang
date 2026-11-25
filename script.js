@@ -212,6 +212,37 @@ const UNITS = [
       { name: "GXZ K ABS", price: "Rp 1.353.000.000" },
     ],
   },
+  {
+    id: "mux",
+    name: "Isuzu MU-X 4×4 Euro 4",
+    cat: "SUV & 4×4",
+    cls: "SUV 4×4 • 1 varian",
+    price: "Rp664,2 juta*",
+    priceType: "OTR Karawang",
+    badge: "SUV 4X4",
+    img: "assets/mux.png",
+    heroLabel: "MU-X 4×4",
+    desc: "SUV 7-seater tangguh berpenggerak 4×4 untuk medan berat perkebunan, tambang, maupun eksekutif.",
+    variants: [
+      { name: "MU-X 4X4 1.9 A/T", price: "Rp 664.200.000" },
+    ],
+  },
+  {
+    id: "dmax",
+    name: "Isuzu D-Max Euro 4",
+    cat: "SUV & 4×4",
+    cls: "Single & Double Cabin 4×4 • 2 varian",
+    price: "Rp448,7 juta*",
+    priceType: "OTR Karawang",
+    badge: "4X4 TANGGUH",
+    img: "assets/dmax.png",
+    heroLabel: "D-MAX",
+    desc: "Pick up Single Cabin & Double Cabin 4×4 andal untuk operasional proyek, tambang, dan perkebunan.",
+    variants: [
+      { name: "D-MAX SC 1.9 M/T", price: "Rp 448.700.000" },
+      { name: "D-MAX DC RODEO", price: "Rp 564.000.000" },
+    ],
+  },
 ];
 
 const FILTERS = [
@@ -221,6 +252,7 @@ const FILTERS = [
   "Microbus",
   "Medium truck",
   "Tractor Head",
+  "SUV & 4×4",
 ];
 
 const FAQS = [
